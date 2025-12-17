@@ -1,0 +1,31 @@
+# Конфигурационные файлы (если содержат чувствительные данные)
+# config.php
+
+# Временные файлы
+*.tmp
+*.log
+*.cache
+
+# Файлы IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+
+# Загруженные файлы
+uploads/*
+!uploads/.htaccess
+!uploads/.gitkeep
+
+# Backup файлы
+*.bak
+*.backup
+*.sql.bak
+
+# Логи
+logs/*.log

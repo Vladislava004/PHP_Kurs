@@ -1,0 +1,13 @@
+# Защита от прямого выполнения PHP файлов
+<FilesMatch "\.php$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Разрешить доступ к файлам
+<FilesMatch "\.(pdf|doc|docx|txt|jpg|jpeg|png|gif|zip|rar|ppt|pptx|xls|xlsx)$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+

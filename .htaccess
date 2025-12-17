@@ -1,0 +1,19 @@
+# Включение mod_rewrite
+RewriteEngine On
+
+# Защита конфигурационных файлов
+<FilesMatch "^(config\.php|database\.sql)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Установка кодировки по умолчанию
+AddDefaultCharset UTF-8
+
+# Защита от просмотра директорий
+Options -Indexes
+
+
+
+
+
